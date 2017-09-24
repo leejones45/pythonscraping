@@ -6,7 +6,7 @@ import datetime
 import sqlite3
 import os
 
-os.chdir('/home/pi/Documents/StudentData')
+os.chdir('/home/pi/Documents/StudentData/pythonscraping')
 url= "http://www.chesterstudentstamp.co.uk/SearchResults/Print/All"
 r = requests.get(url)
 source = r.text
