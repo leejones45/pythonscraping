@@ -6,7 +6,7 @@ from bokeh.layouts import row
 from bokeh.plotting import figure
 from bokeh.palettes import Spectral9, Viridis256
 
-date = '2017-09-22'
+date = '2017-09-30'
 output_file("dashboard.html", title='Chester Student Accomodation Analysis')
 conn = sqlite3.connect("student_data.db")
 sql_byarea = "select Sum(BedroomsAvailable) as RoomsAvailable, Area from student_data where Date='" + \

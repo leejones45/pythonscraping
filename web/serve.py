@@ -6,11 +6,12 @@ app = Flask(__name__)
 def hello():
    now = datetime.datetime.now()
    timeString = now.strftime("%Y-%m-%d %H:%M")
+   
    templateData = {
-      'title' : 'HELLO!',
+      'title' : 'todo',
       'time': timeString
       }
    return render_template('main.html', **templateData)
 
 if __name__ == "__main__":
-   app.run(host='0.0.0.0', port=5000, debug=True)
+   app.run(host='0.0.0.0', port=500)
